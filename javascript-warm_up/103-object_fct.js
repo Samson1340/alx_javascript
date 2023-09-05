@@ -1,6 +1,9 @@
-function incr(value){
-    return value++;
-}
-module.exports = {
-    incr : incr
-}
+const myObject = {
+    type: 'object',
+    value: 12
+  };
+  console.log(myObject);
+  
+  myObject.incr = function () {
+    this.value++;
+  };
